@@ -1,0 +1,6 @@
+framework module SpirobankSmartKit {
+  umbrella header "SpirobankSmartKit.h"
+
+  export *
+  module * { export * }
+}

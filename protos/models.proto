@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message DeviceInfo {
+    string name = 1;
+    string protocol = 2;
+    string serialNumber = 3;
+  }

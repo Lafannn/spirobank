@@ -1,0 +1,4 @@
+enum TurbineType {
+  reusable,
+  disposable,
+}

@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Flow{
+    float value = 1;
+    bool isFirstPackage = 2;
+}

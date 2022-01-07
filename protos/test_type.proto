@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+enum TestType {
+    TestFVC = 0;
+    TestPeakFlowFev1 = 1;
+    // SMART ONE OX: vers 2.7 - 1.4 - 1.0 OXIMETRY TEST
+    TestOximetry = 2;
+    TestFTmonitor = 3;
+    // 2.9 - 1.5 - 1.3 OXIMETRY TEST
+    TestFVCPlus = 4;
+    //VC TEST
+    TestVC = 5;
+    //Cardionica
+    TestECG = 6;
+}

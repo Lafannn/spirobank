@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message GetPercentageRequest{
+    float flow = 1;
+    int32 volumeStep = 2;
+    bool isFirstPackage = 3;
+}

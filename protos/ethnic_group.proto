@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+enum EthnicGroup{
+    ethnicGroupCaucasian = 0;
+    ethnicGroupAfricanAmerican = 1;
+    ehnicGroupNorthEastAsian = 2;
+    ethnicGroupSouthEastAsian = 3;
+    ethnicGroupOther = 4;
+}

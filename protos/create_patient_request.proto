@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "ethnic_group.proto";
+import "gender.proto";
+
+message CreatePatientRequest{
+    string date = 1;
+    float height = 2;
+    float weight = 3;
+    EthnicGroup ethnic = 4;
+    Gender gender = 5;
+}

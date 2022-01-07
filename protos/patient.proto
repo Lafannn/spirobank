@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "ethnic_group.proto";
+import "gender.proto";
+
+message Patient{
+
+}

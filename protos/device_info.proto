@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+message DeviceInfo {
+    string deviceId = 1;
+    string name = 2;
+    string protocol = 3;
+    string serialNumber = 4;
+    //signal strenght in Db of the device
+    int64 rssi = 5; 
+    //ver 2.0.0 the test requested to current instance of device
+    int64 currentTestType = 6; 
+    //ver 2.0.1 new deviceInfo property: AdvertisementData (sent by device during discovery)
+    string advertisementData = 7;
+    //ver 2.4.0
+    string nameCached = 8;
+    // vers 2.5.2 - 1.2.2 for iSpirometry 
+    string shortName = 9;
+    //vers 2.7.2
+    string bootID = 10;
+    //ATS2019
+    AtsStandard atsStandardSupported = 11;
+    //VC TEST
+    CheckState fvcPlusEnableStatus = 12;
+    CheckState vcEnableSatus = 13;
+}
+
+enum AtsStandard {
+    ATS_2015 = 0;
+    ATS_2019 = 1;
+}
+
+enum CheckState {
+    ENABLED = 0;
+    DISABLED = 1;
+    REQUEST_TIMED_OUT = 2;
+    FIRMWARE_UPDATE_NEEDED = 3;
+    TEST_NOT_SUPPORTED = 4;
+}

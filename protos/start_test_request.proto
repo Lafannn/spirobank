@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "test_type.proto";
+import "turbine_type.proto";
+
+message StartTestRequest{
+    TestType testType = 1;
+    int32 endOfTestTimeout = 2;
+    TurbineType turbineType = 3;
+}

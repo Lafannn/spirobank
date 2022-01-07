@@ -1,16 +1,10 @@
-import 'dart:async';
+export 'src/device.dart';
+export 'src/device_manager.dart';
+export 'src/test_type.dart';
+export 'src/turbine_type.dart';
+export 'src/patient.dart';
+export 'src/ethnic_group.dart';
+export 'src/gender.dart';
 
-import 'package:flutter/services.dart';
-
-class Spirobank {
-  static const MethodChannel _channel = MethodChannel('spirobank');
-
-  static Future<String?> get platformVersion async {
-    final String? version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-
-  Future<void> startScan() async {
-    await _channel.invokeMethod('startDiscovery');
-  }
-}
+//TODO temp
+export 'src/messages/device_info.pb.dart';

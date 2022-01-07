@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message DeviceStatus{
+    bool isLastCommandValid = 1;
+    bool isDeviceReady = 2;
+}

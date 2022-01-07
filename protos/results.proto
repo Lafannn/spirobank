@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "test_type.proto";
+
+// message Results{
+//     int32 pefCls = 1; //Peak Flow in Centileters per seconds
+//     int32 fev1Cl = 2; //Forced Expiratory Volume after 1 second in Centiliters
+//     int fvcCl = 3; //Forced Expiratory Capacity in Centiliters
+//     float fev1FvcPcnt = 4; //Fev1% in percentage
+//     int32 qualityCode = 5; //code of the qulity (acceptability) message  to display
+//     // vers 1.3 ----------
+//     //@property (nonatomic) int eVol_mL; //Extrapolated volume in Milliliters
+//     //@property (nonatomic) int pefTime_sec; // time (in seconds) to reach the Peak Flow value
+//     int32 fev6Cl = 6; //forced Expiratory Volume after 6 second in Centiliters
+//     int32 fef2575Cls = 7; // Maximum mid-expiratory flow
+//     // vers 2.0 -----------
+//     int32 eVolMl = 8; //Extrapolated volume in Milliliters
+//     TestType resultTestType = 9; // type of test which retrieved this result
+
+//     int32 pefTime_sec DEPRECATED_MSG_ATTRIBUTE("Use pefTime_ms instead."); // time (in milliseconds) to reach the Peak Flow value
+//     @property (nonatomic) int pefTime_ms; // time (in milliseconds) to reach the Peak Flow value
+//     // vers 1.9 ------------
+
+//     //*****ATS2019 ************************************
+//     @property (nonatomic) AtsStandard deviceAtsStandard;
+// }

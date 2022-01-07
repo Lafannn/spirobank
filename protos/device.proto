@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "device_info.proto";
+import "device_status.proto";
+
+message Device{
+    DeviceStatus deviceStatus = 1;
+    DeviceInfo deviceInfo = 2;
+    int32 batteryLevel = 3;
+    int32 volumeStep = 4;
+    string softwareVersion = 5;
+    string bluetoothVersion = 6;
+}
